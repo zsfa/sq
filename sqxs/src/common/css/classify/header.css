@@ -1,0 +1,40 @@
+header{
+    height:.86rem;
+    width: 100%;
+    position: absolute;
+	top: 0;left: 0;
+}
+header .logo{
+	float:left;
+	width: 2.2rem;
+	height: .5rem;
+	margin-top: .2rem;
+	margin-left: .32rem;
+}
+header .logo .logo_img{
+	display: block;
+	height: .5rem;
+	width: .5rem;
+	float: left;
+}
+header .logo .logo_img img{
+	width: 100%;
+}
+header .logo .logo_name{
+	display: inline-block;
+	width: 1.45rem;
+	height: .332rem;
+	margin-top: .1rem;
+	margin-left: .2rem;
+}
+header .logo .logo_name img{
+	width:100%;
+}
+
+header #classify_search{
+	float:right;
+	display: inline-block;
+	width: .8rem;
+	height: .5rem;
+	margin-top: .3rem;
+}

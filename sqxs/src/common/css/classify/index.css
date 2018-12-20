@@ -1,0 +1,138 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* section滚动设置 */
+section{
+	position: fixed;
+	left:0;
+	top:.86rem;
+	right: 0;
+	bottom:.98rem;
+	overflow: scroll;
+}
+
+/* 精品推荐 */
+.tit{
+	
+	padding-left: .32rem;
+    color: #333;
+    display: inline-block;
+    height: .32rem;
+    line-height: .32rem;
+    font-size: .28rem;
+    position: relative;
+	font-weight: 400;
+	padding-top: .32rem;
+}
+.fa-goodLists{
+	width: 100%;
+	height: 3.446rem;
+	/* background: #ffc; */
+	
+}
+.goodLists{
+	width: 100%;
+	height: 2.8rem;
+	padding: .32rem 0 .32rem .32rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+.goodLists>li{
+	width: 25%;
+	height: 100%;
+	padding-right: .32rem;
+}
+.goodLists>li>img{
+	width: 1.45rem;
+	height:1.946rem;
+}
+.goodLists>li>span{
+	color: #333;
+	width: 100%;
+	margin: .16rem 0 .04rem;
+	display: block;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+	height: .32rem;
+    text-align: left;
+	font-size: 25px;
+}
+.goodLists>li>i{
+	font-style: normal;
+	color: #999;
+}
+.goodLists-change{
+	width: 100%;
+	height:.96rem;
+	text-align: center;
+	line-height: .96rem;
+	font-size: 30px;
+	background: #fff;
+	border-top: 1px solid #F0F0F2;
+	border-bottom: .16rem solid #F0F0F2;
+}
+.goodLists-change>span{
+	margin-right: 10px;
+}
+.goodLists-change>i{
+	font-size: 25px;
+}
+
+/* 女生美文 */
+.girlLists>ul{
+	width: 100%;
+	height: 4.62rem;
+	display: flex;
+	flex-direction: column;
+	padding:0 .32rem;
+	
+}
+.girlLists>ul>li{
+	padding:.32rem 0;
+	
+}
+.girlLists>ul>li>span{
+	display: inline-block;
+	font-size: .31rem;
+	line-height: 0;
+	width: 4.74rem;
+}
+.girlLists>ul>li>i,.girlLists>ul>li>b{
+	font-style: normal;
+	display: inline-block;
+    height: .36rem;
+    line-height: .38rem;
+    padding: 0 .11rem;
+    border: 1px solid rgba(153,153,153,.3);
+    border-radius: .04rem;
+    font-size: .2rem;
+    color: #999;
+    margin-right: .08rem;
+    vertical-align: text-bottom;
+    background: transparent;
+}
+.girlLists>ul>li>em{
+	font-style:normal ;
+	display: block;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    font-size: .24rem;
+    line-height: .32rem;
+    height: .32rem;
+    color: #999;
+	width: 100%;
+	margin-top: 20px;
+	font-size: .26rem;
+}
+.girlLists>ul>li>.blue{
+	color:#57aeff;
+}
+.girlLists>ul>li>.green{
+	color:#77ff57;
+}
