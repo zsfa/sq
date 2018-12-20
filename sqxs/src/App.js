@@ -17,7 +17,7 @@ class App extends Component {
 								<Route path="/bookTop" component={BookTop}/>
 								<Route path="/bookList" component={BookList}/>
 								<Route path="/user" component={User}/>
-								<Redirect path="/" to="/bookRack"/>
+								<Redirect path="/" to="/classify"/>
 							</Switch>
 							<div id="footer">
 								<ul>
