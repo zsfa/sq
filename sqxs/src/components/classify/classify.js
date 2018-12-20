@@ -3,7 +3,6 @@ import GoodsBook from './children/goodsBook'
 import Header from './children/header'
 import {connect} from 'react-redux'
 import {goodsBook_action,grilArticle_action} from '../../action/classifyAction/classifyActionCreator'
-
 class Classify extends Component{
 	render(){
 		let {goodsBookList,girlArticleList} = this.props

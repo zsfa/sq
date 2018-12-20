@@ -1,0 +1,69 @@
+#top_header{
+	height: .98rem;
+	width: 100%;
+	background: #FFFF00;
+	text-align: center;
+	line-height: .98rem;
+	position: fixed;
+	height: 0;left: 0;
+}
+#top_header .logo{
+	float:left;
+	width: 3rem;
+	height: .5rem;
+	margin-top: .2rem;
+	margin-left: .32rem;
+}
+#top_header .logo .logo_img{
+	display: block;
+	height: .5rem;
+	width: .5rem;
+	float: left;
+}
+#top_header .logo .logo_img img{
+	width: 100%;
+}
+#top_header .logo .logo_name{
+	display: inline-block;
+	width: 1.45rem;
+	height: .5rem;
+	margin-left: .2rem;
+}
+#top_header .logo .logo_name img{
+	width:100%;
+}
+#top_header h2{
+	height: .6rem;
+	width: 1rem;
+	float:left;
+	line-height: 1rem;
+}
+#top_header #classify_search{
+	float:right;
+	display: inline-block;
+	width: .8rem;
+	height: .5rem;
+	margin-top: .3rem;
+}
+.top_message{
+	position: absolute;
+	top: .98rem;left: 0;
+	right:0;bottom:.98rem;
+}
+.top_message a{
+	display: block;
+	height: 1.6rem;
+	width: 100%;
+	padding-top: .3rem;
+	padding-left: 1.4rem;
+	box-shadow: 0rem .16rem 0rem #F0F0F2;
+	margin-top: .18rem;
+}
+.top_message a h2{
+	font-size: .32rem;
+	font-weight: normal;
+}
+.top_message a p{
+	font-size: .24rem;
+	font-weight: normal;
+}
