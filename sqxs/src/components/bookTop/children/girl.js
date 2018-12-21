@@ -1,10 +1,10 @@
-import React,{Component,Fragment} from 'react'
+import React,{Component} from 'react'
+import {Link} from "react-router-dom"
 
 export default class Girl extends Component{
 	render(){
 		
 		let {message} = this.props
-		console.log(message.module,1)
 		//message= message.data
 		return(
 			<div className="top_rank">
@@ -26,12 +26,12 @@ export default class Girl extends Component{
 				<ul className="top_message">
 					{
 						message.module.map((item,index)=>{
-							 return  item.content.title?<a href="#" key={index} className="message_wrap"> 
+							 return  item.content.title?<Link to="/toprank" key={index} className="message_wrap"> 
 										 <li  className="rank_item">
 											 <h2>{item.content.title}</h2>
 											 <p>{item.content.desc}</p>
 										 </li>
-									 </a>:""
+									 </Link>:""
 						 })
 						 
 					}

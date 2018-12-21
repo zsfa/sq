@@ -15,7 +15,13 @@ body { color:#333; font:12px "SimSun","微软雅黑","Arial Narrow",HELVETICA; b
 a { color:#666; text-decoration:none; }
 /*清除浮动*/
 .clear{clear:both}
-*{box-sizing:border-box}
+*{
+    box-sizing:border-box;
+    font-family:"Helvetica Neue";
+}
+i{
+	font-style: normal;
+}
 body,html{
     height: 100%;
     overflow: hidden;

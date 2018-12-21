@@ -1,0 +1,77 @@
+#root,#root>div{
+	height: 100%;
+}
+.wrapper{
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+.content{
+	padding-bottom: .98rem;
+}
+.top_title{
+    display: flex;
+    justify-content: space-between;
+    height: .98rem;
+	width: 100%;
+	font-size: .32rem;
+	line-height: .98rem;
+}
+.top_class{
+	height: .86rem;
+	width: 100%;
+	line-height: .86rem;
+	font-size: .28rem;
+}
+.top_class>span{
+	display: inline-block;
+	height: .86rem;
+	width: 50%;
+	text-align: center;
+	line-height: .86rem;
+}
+.top_item{
+	height: 2rem;
+	width: 100%;
+	padding: 20px 16px;
+	position: relative;
+}
+.top_img{
+	height: 1rem;
+	width: .9rem;
+	position: absolute;
+	top: 25px;left: 50px;
+}
+.top_item>.top_img img{
+	width: 100%;
+}
+.top_info{
+	height: 2rem;
+	width: 70%;
+	margin-left: 1.6rem;
+}
+.top_info>h2{
+	font-size: .32rem;
+	font-weight: normal;
+}
+.top_info>h3{
+	margin-top: 10px;
+	font-size: .28rem;
+	font-weight: normal;
+}
+.top_info>.ranking{
+	display: block;
+	position: absolute;
+	top: 20px;left: 50px;
+	background: red;
+}
+.book_tag{
+	margin-top: 12px;
+}
+.book_tag>span{
+	display: inline-block;
+	height: .4rem;
+	line-height: .34rem;
+	margin-left: .08rem;
+	border: 5px solid rgba(153,153,153,.3);
+}

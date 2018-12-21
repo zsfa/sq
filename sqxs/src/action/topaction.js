@@ -18,7 +18,19 @@ export const rank_get_action=()=>({
         fetch(url)
         .then((res)=>res.json())
         .then((data)=>{
-			console.log(data)
+            console.log(data)
+			resolve(data)
+        })
+    })
+})
+export const man_get_action=()=>({
+    type:"RANK_MAN_GET",
+    payload:new Promise(resolve=>{
+        let url="/novel/i.php?do=is_novelrank&p=1&page=1&size=10&onlyCpBooks=1&gender=1&type=1&shuqi_h5=&_=1545390324703"
+        fetch(url)
+        .then((res)=>res.json())
+        .then((data)=>{
+            console.log(data)
 			resolve(data)
         })
     })
