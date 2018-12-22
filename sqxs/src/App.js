@@ -7,6 +7,7 @@ import User from './components/user/user'
 import TopRank from './components/bookTop/children/toprank'
 import { Provider } from "react-redux";
 import store from "./store";
+import "../node_modules/antd/dist/antd"
 class App extends Component {
   render() {
     return (

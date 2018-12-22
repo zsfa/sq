@@ -1,0 +1,83 @@
+.user_tab{
+  height: .88rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.user_tab span{
+  width: 50%;
+  text-align: center;
+  line-height: .88rem
+}
+.acc_inp{
+  height: .68rem;
+  width: 100%;
+  font-size: .28rem;
+  margin-top: .5rem
+}
+.acc_inp p{
+  height: .68rem;
+  width: .64rem;
+  float: left;
+  margin-left: .5rem
+}
+.login-form .acc_inp .acc_num{
+  height: .68rem;
+  width: 70%;
+  float: left;
+  font-size: .2rem;
+}
+.psd_inp{
+  height: .68rem;
+  width: 100%;
+  font-size: .28rem;
+  margin-top: .8rem
+}
+.psd_inp p{
+  height: .68rem;
+  width: .64rem;
+  float: left;
+  margin-left: .5rem
+}
+.login-form .psd_inp .psd_num{
+  height: .68rem;
+  width: 70%;
+  float: left;
+  font-size: 22px;
+}
+.ant-input{
+  font-size: 15px
+}
+.agree .agreement{
+  display: block;
+  height: .68rem;
+  width: 100%;
+  margin-left: .6rem;
+  font-size: .28rem;
+  margin-top: 1rem
+}
+.login-form-button{
+  display: block;
+  height: .88rem;
+  width: 6.4rem;
+  margin-left:.6rem 
+}
+.login-form-forgot{
+  float: left;
+  font-size: .3rem;
+  margin-left:.6rem 
+}
+.login-form-register{
+  float: right;
+  font-size: .3rem;
+  margin-right:.6rem 
+}
+#components-form-demo-normal-login .login-form {
+    max-width: 300px;
+  }
+  #components-form-demo-normal-login .login-form-forgot {
+    
+  }
+  #components-form-demo-normal-login .login-form-button {
+    width: 100%;
+  }
