@@ -65,6 +65,7 @@
 	font-weight: normal;
 }
 .top_message a p{
+	margin-top: .2rem;
 	font-size: .24rem;
 	font-weight: normal;
 }

@@ -15,8 +15,8 @@ export default class Header extends Component{
         return (
           <div>
               <div className="top_class">
-                <span className="conten_left" onClick={this.props.handleLeft.bind(this,flaga)}>男生</span>
-                <span className="conten_right" onClick={this.props.handleRight.bind(this,flagb)}>女生</span>
+                <span className={flaga?"conten_left":""} onClick={this.props.handleLeft.bind(this,flaga)}>男生</span>
+                <span className={flagb?"conten_right":""} onClick={this.props.handleRight.bind(this,flagb)}>女生</span>
              </div>
              <div className="top_main">
                 {

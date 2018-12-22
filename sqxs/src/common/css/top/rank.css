@@ -75,3 +75,11 @@
 	margin-left: .08rem;
 	border: 5px solid rgba(153,153,153,.3);
 }
+.conten_left{
+	color: #00c98d;
+	border-bottom:.06rem solid #00c98d;
+}
+.conten_right{
+	color: #00c98d;
+	border-bottom:.06rem solid #00c98d;
+}
