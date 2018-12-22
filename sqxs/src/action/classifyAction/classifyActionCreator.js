@@ -1,5 +1,6 @@
 import {fetch} from 'whatwg-fetch'
 
+//精品推荐
 export const goodsBook_action = ()=>({
 	type:"GOODSBOOK",
 	payload:new Promise(reslove=>{
@@ -10,8 +11,8 @@ export const goodsBook_action = ()=>({
 			reslove(data)})
 	})
 })
-//http://bookstoreapi.shuqireader.com
 
+//女生美文
 export const grilArticle_action = ()=>({
 	type:"GIRLARTICLE",
 	payload:new Promise(reslove=>{
@@ -22,3 +23,19 @@ export const grilArticle_action = ()=>({
 			reslove(data)})
 	})
 })
+
+//新书专区
+export const newBooks_action = ()=>({
+	type:"NEWBOOKS",
+	payload:new Promise(reslove=>{
+		let url ="/eva_bookstore/v1/module/query?appId=1&pageId=1&channelId=&versionId=&ver=&shuqi_h5=&md5key=&userId=8000000&timestamp=1545357622&type=2&resetcache=&func_id=11%2C33%2C11%2C19%2C33%2C12%2C33%2C11%2C19%2C33&orderid=18%2C19%2C23%2C24%2C25%2C26%2C27%2C28%2C29%2C30&sign=27E46DC4B605080B96C21E5208513C56&key=shuqiapi&_=1545357622987";
+		fetch(url)
+		.then(res=>res.json())
+		.then((data)=>{
+			reslove(data)})
+	})
+})
+
+//http://walden1.shuqireader.com/webapi/book/info/?_=1545479585418
+//http://walden1.shuqireader.com/webapi/book/info/?_=1545479637009
+//http://walden1.shuqireader.com/webapi/book/info/?_=1545479842712

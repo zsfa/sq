@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.detailsHeader{
+	width: 100%;
+	height: 0.86rem;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: -0.266667vw 0 0.533333vw rgba(0,0,0,.6);
+
+}
+.detailsHeader i:nth-child(1){
+	font-size: .5rem;
+	line-height: 0.86rem;
+	color: #10cb93;
+	font-weight: bolder;
+	margin-left: 15px;
+}
+
+.detailsHeader i:nth-child(2){
+	font-size: .3rem;
+	margin: auto;
+}
+.detailsHeader i:nth-child(3){
+	font-size: .5rem;
+	line-height: 0.86rem;
+	color: #10cb93;
+	font-weight: bolder;
+	margin-right: 15px;
+}
+
+.detailsList{
+	position: absolute;
+	top: .86rem;
+	left: 0;
+	right: 0;
+	bottom: .98rem;
+	overflow: scroll;
+}
+
+
+/* 详情 */
+.detailsList .details_intr{
+	width: 100%;
+	display: flex;
+	padding:.4rem .32rem .32rem;
+	height: 3.32rem;
+    padding: .4rem .32rem .32rem;
+}
+.detailsList .details_intr>img{
+	margin-right: .32rem;
+}
+.detailsList .details_intr .details_infor{
+	width: 4.6rem;
+	height: 100%;
+}
+.detailsList .details_intr .details_infor>h4{
+	font-size: .36rem;
+	color: #333;
+	line-height: .46rem;
+	font-weight: normal;
+	
+	
+}
+.detailsList .details_intr .details_infor p{
+	font-size: .28rem;
+	color: #999;
+}
+.detailsList .details_intr .details_infor p:nth-of-type(1){
+	padding: .24rem 0 .16rem;
+}
+.detailsList .details_intr .details_infor p:nth-of-type(2){
+	margin-bottom: .16rem;
+	
+	
+		
+}
+.detailsList .details_con{
+	display: flex;
+	padding-left: .32rem;
+	line-height: .44rem;
+	font-size: .28rem;
+	color: #999;
+}

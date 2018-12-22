@@ -3,8 +3,9 @@ import reduxPromiseMiddleware from "redux-promise-middleware";
 
 import classify from './reducers/classify'
 import topReducers from './reducers/topReducers'
+import bookList from './reducers/bookList'
 const reducers = combineReducers({
-    classify,topReducers
+    classify,topReducers,bookList
 })
 
 const store = createStore(reducers,applyMiddleware(reduxPromiseMiddleware()));
