@@ -1,9 +1,10 @@
 import React,{Component,Fragment} from 'react'
 import '../../../common/css/classify/index.css'
+import {Link} from 'react-router-dom'
 class GoodsBook extends Component{
 	render(){
 		let {gbList,girlList,handleMore,handleMoreTwo,newBooks} = this.props
-		console.log(newBooks)
+		// console.log(newBooks)
 		
 		return (
 			<Fragment>
@@ -17,11 +18,11 @@ class GoodsBook extends Component{
 					<ul className="goodLists">
 						{
 							gbList.map((item,index)=>{
-								return<li key={index} >
+								return<li key={index}><Link to={"/details/"+item.bid}>
 											<img src={item.book_cover}/>
 											<span>{item.bookname}</span>
 											<i>{item.author_name}</i>							
-									</li>
+										</Link></li>
 							})
 						}
 					</ul>
@@ -92,7 +93,7 @@ class GoodsBook extends Component{
 						}
 					</ul>
 				</div>
-				<div className="goodLists-change"><span>查看更多</span></div>
+				<Link to="/BookList"><div className="goodLists-change"><span>查看更多</span></div></Link>
 			</Fragment>
 		)
 	}

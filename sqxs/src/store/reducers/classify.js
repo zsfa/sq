@@ -19,7 +19,7 @@ export default(state=defaultState,action)=>{
 			return girlArticleState;
 		case "NEWBOOKS_FULFILLED":
 			let newBooksState = JSON.parse(JSON.stringify(state));
-			console.log(action.payload.data.module[3].content);
+			// console.log(action.payload.data.module[3].content);
 			newBooksState.newBooksList = action.payload.data.module[3].content;
 			return newBooksState;
 	}

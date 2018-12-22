@@ -46,11 +46,11 @@ section{
 	height: 100%;
 	padding-right: .32rem;
 }
-.goodLists>li>img{
+.goodLists>li img{
 	width: 1.45rem;
 	height:1.946rem;
 }
-.goodLists>li>span{
+.goodLists>li span{
 	color: #333;
 	width: 100%;
 	margin: .16rem 0 .04rem;
@@ -63,7 +63,7 @@ section{
     text-align: left;
 	font-size: 25px;
 }
-.goodLists>li>i{
+.goodLists>li i{
 	font-style: normal;
 	color: #999;
 }

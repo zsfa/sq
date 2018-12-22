@@ -9,9 +9,9 @@
     position: fixed;
     left: 0;
     bottom: 0;
-       box-shadow: 0 -0.266667vw 0.533333vw rgba(0,0,0,.3);
-       z-index: 10;
-       background: white
+    box-shadow: 0 -0.266667vw 0.533333vw rgba(0,0,0,.3);
+    z-index: 10;
+    background: white
 }
 
 #footer>ul{

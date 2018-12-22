@@ -4,6 +4,7 @@ import Classify from './components/classify/classify'
 import BookTop from './components/bookTop/bookTop'
 import BookList from './components/bookList/bookList'
 import User from './components/user/user'
+import Details from './components/classify/children/details'
 import TopRank from './components/bookTop/children/toprank'
 import { Provider } from "react-redux";
 import store from "./store";
@@ -19,6 +20,7 @@ class App extends Component {
 								<Route path="/bookList" component={BookList}/>
 								<Route path="/user" component={User}/>
 								<Route path="/toprank" component={TopRank}/>
+								<Route path="/details/:bid" component={Details}/>
 								<Redirect path="/" to="/classify"/>
 							</Switch>
 							<div id="footer">

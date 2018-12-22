@@ -35,3 +35,7 @@ export const newBooks_action = ()=>({
 			reslove(data)})
 	})
 })
+
+//http://walden1.shuqireader.com/webapi/book/info/?_=1545479585418
+//http://walden1.shuqireader.com/webapi/book/info/?_=1545479637009
+//http://walden1.shuqireader.com/webapi/book/info/?_=1545479842712
