@@ -11,13 +11,16 @@ const FormItem = Form.Item;
         this.state={
             accountNum:"",
             psdNum:"",
-            flag:true
+            flag:false,
+            test:"",
+            pwd:""
         }
     }
     render() {
-        let {accountNum,psdNum} = this.state
-        const { getFieldDecorator } = this.props.form;
+        let {accountNum,psdNum,test} = this.state
+        let {userMsg} = this.props
        
+        const { getFieldDecorator } = this.props.form;
         return (
             <div>
                 <Form onSubmit={this.handleSubmit} className="login-form">
@@ -32,12 +35,17 @@ const FormItem = Form.Item;
                              className="acc_num" prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="请输入手机号/邮箱" />
                         )}
                     </FormItem>
+                    <span>{test}</span>
                     <FormItem className="psd_inp">
                      <p>密码</p>   
                      {getFieldDecorator('password', {
                          initialValue: psdNum,
                             rules: [{ required: true, message: 'Please input your Password!' }],
-                        })(
+                        },
+                        // {
+                        //         validator: this.checkAccount,
+                        // }
+                        )(
                               <Input 
                               //value={psdNum} onChange={this.handlePsd.bind(this)}
                               className="psd_num" prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="请输入密码" />
@@ -62,22 +70,50 @@ const FormItem = Form.Item;
             </div>
         )
     }
+    
+//     testUser(){
+   
+// }
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.form.validateFields((err, values) => {
             if (!err) {
                 this.props.getReturn(values.userName)
-                console.log(values.userName)
+                this.setState({
+                    pwd:values.password
+                })
+                
             }
         });
+        this.setState({
+            flag:true
+        })
+       
+    }
+    componentDidUpdate(){
+        if(this.state.flag){
+            if(this.props.userMsg!==""){
+                if(this.props.userMsg[0].uname!==""&&this.state.pwd==this.props.userMsg[0].upwd){
+              alert("登陆成功") ;
+            }else{
+                alert("请输入正确的演示账号密码") ;
+                console.log(this.state.pwd)
+                console.log(this.props)
+                console.log(this.props.userMsg[0].upwd)
+            }
+            }
+            
+    }
+      //  this.testUser()
     }
 }
 const mapStateToProps = (state)=>({
-    top:state.topReducers.top
+  userMsg:state.user.userMsg
 })
 const mapDispatchToProps = (dispatch)=>({
     getReturn(user){
         dispatch(get_user_action(user))
+       
     }
 })
 const WrappedNormalLoginForm = Form.create()(AccountSub);
