@@ -34,7 +34,7 @@ class Details extends Component{
 											<div className="details_infor">
 												<h4>{item.bookname}</h4>
 												<p>{item.author_name}</p>
-												<p><span>{item.class_name}</span><span>{item.size}</span></p>
+												<p><span>{item.class_name}</span><span>{Math.round(item.size/10000)}万字</span></p>
 												<p>{item.stat_name}</p>
 											</div>
 										</div>

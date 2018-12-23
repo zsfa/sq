@@ -76,6 +76,9 @@
 	
 		
 }
+.detailsList .details_intr .details_infor p:nth-of-type(2) span:nth-child(1){
+	margin-right: 10px;
+}
 .detailsList .details_con{
 	display: flex;
 	padding-left: .32rem;
